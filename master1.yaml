@@ -1,5 +1,18 @@
 proxies:
-- name: buat-baru-ya
+- name: master1
+  server: bugmu.com
+  type: trojan
+  port: 443
+  password: 3680f4f0-2f82-11ed-be4e-1239d0255272
+  udp: true
+  sni: sg3-trojan.bonds.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /howdy
+    headers:
+      Host: sg3-trojan.bonds.id
+- name: master2
   server: bugmu.com
   type: trojan
   port: 443
